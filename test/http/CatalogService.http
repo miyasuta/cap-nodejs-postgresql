@@ -7,3 +7,16 @@
 # @name Books_GET
 GET {{server}}/odata/v4/catalog/Books
 Authorization: Basic {{username}}:{{password}}
+
+### POST Books
+
+# @name Books_POST
+POST {{server}}/odata/v4/catalog/Books
+Authorization: Basic {{username}}:{{password}}
+Content-Type: application/json
+
+{
+  "ID": 100,
+  "title": "The Great Gatsby",
+  "stock": 10
+}
